@@ -282,8 +282,8 @@
         <note></note>
       </trans-unit>
       <trans-unit id="LegacyScenariosNotSupportedWarning">
-        <source>Warning : A testsettings file or a runsettings with a ForcedLegacyMode set to true is not supported with the MSTest V2 Adapter.</source>
-        <target state="translated">Warning : A testsettings file or a runsettings with a ForcedLegacyMode set to true is not supported with the MSTest V2 Adapter.</target>
+        <source>Warning : A testsettings file, a runsettings file with a ForcedLegacyMode set to true or a vsmdi file is not supported with the MSTest V2 Adapter.</source>
+        <target state="new">Warning : A testsettings file or a runsettings with a ForcedLegacyMode set to true is not supported with the MSTest V2 Adapter.</target>
         <note></note>
       </trans-unit>
       <trans-unit id="TestContextMessageBanner">
@@ -304,6 +304,26 @@
       <trans-unit id="DiscoveryWarning">
         <source>[MSTest][Discovery][{0}] {1}</source>
         <target state="new">[MSTest][Discovery][{0}] {1}</target>
+        <note></note>
+      </trans-unit>
+      <trans-unit id="TestParallelizationBanner">
+        <source>MSTest Executor: Test Parallelization enabled for {0} (Workers: {1}, Scope: {2}).</source>
+        <target state="new">MSTest Executor: Test Parallelization enabled. Parallel Level {0}, Parallel Mode {1}</target>
+        <note></note>
+      </trans-unit>
+      <trans-unit id="InvalidParallelScopeValue">
+        <source>Invalid value '{0}' specified for 'Scope'. Supported scopes are {1}.</source>
+        <target state="new">Invalid value '{0}' specified for 'Scope'. Supported scopes are {1}.</target>
+        <note>'Scope' is a setting name that shouldn't be localized.</note>
+      </trans-unit>
+      <trans-unit id="InvalidParallelWorkersValue">
+        <source>Invalid value '{0}' specified for 'Workers'. The value should be a non-negative integer.</source>
+        <target state="new">Invalid value '{0}' specified for 'Workers'. The value should be a non-negative integer.</target>
+        <note>`Workers` is a setting name that shouldn't be localized.</note>
+      </trans-unit>
+      <trans-unit id="TestAssembly_AssemblyDiscoveryFailure">
+        <source>Failed to discover tests from assembly {0}. Reason:{1}</source>
+        <target state="new">Failed to discover tests from assembly {0}. Reason:{1}</target>
         <note></note>
       </trans-unit>
     </body>

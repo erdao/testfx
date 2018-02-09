@@ -152,6 +152,24 @@ namespace Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid value &apos;{0}&apos; specified for &apos;Scope&apos;. Supported scopes are {1}..
+        /// </summary>
+        internal static string InvalidParallelScopeValue {
+            get {
+                return ResourceManager.GetString("InvalidParallelScopeValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid value &apos;{0}&apos; specified for &apos;Workers&apos;. The value should be a non-negative integer..
+        /// </summary>
+        internal static string InvalidParallelWorkersValue {
+            get {
+                return ResourceManager.GetString("InvalidParallelWorkersValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Invalid settings &apos;{0}&apos;. Unexpected XmlAttribute: &apos;{1}&apos;..
         /// </summary>
         internal static string InvalidSettingsXmlAttribute {
@@ -170,7 +188,7 @@ namespace Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Warning : A testsettings file or a runsettings with a ForcedLegacyMode set to true is not supported with the MSTest V2 Adapter..
+        ///   Looks up a localized string similar to Warning : A testsettings file, a runsettings file with a ForcedLegacyMode set to true or a vsmdi file is not supported with the MSTest V2 Adapter..
         /// </summary>
         internal static string LegacyScenariosNotSupportedWarning {
             get {
@@ -184,6 +202,15 @@ namespace Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter {
         internal static string SourcesNotSupported {
             get {
                 return ResourceManager.GetString("SourcesNotSupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to discover tests from assembly {0}. Reason:{1}.
+        /// </summary>
+        internal static string TestAssembly_AssemblyDiscoveryFailure {
+            get {
+                return ResourceManager.GetString("TestAssembly_AssemblyDiscoveryFailure", resourceCulture);
             }
         }
         
@@ -220,6 +247,15 @@ namespace Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter {
         internal static string TestNotFound {
             get {
                 return ResourceManager.GetString("TestNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSTest Executor: Test Parallelization enabled for {0} (Workers: {1}, Scope: {2})..
+        /// </summary>
+        internal static string TestParallelizationBanner {
+            get {
+                return ResourceManager.GetString("TestParallelizationBanner", resourceCulture);
             }
         }
         
